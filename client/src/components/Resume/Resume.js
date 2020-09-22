@@ -10,7 +10,6 @@ export default function Resume({children}) {
 
 const STYLE = {
     height: '50px',
-    witdh: '100%',
     border: '1px  solid gray',
     display: 'flex',
     flexDirection: 'row',

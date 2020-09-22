@@ -36,7 +36,9 @@ export default function SelectYearMonth({yearMonthList, changeSelectFilter, star
 }
 
 const STYLE = {
-    background: 'pink',
-    width: '150px',
-
+    width: '10em',
+    height: '0.9em',
+    marginLeft: '0.7em',
+    marginRigth: '0.7em',
+    marginBottom: '0.7em',
 }

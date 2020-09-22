@@ -5,12 +5,13 @@ export default function NextReturnButton({typeMark, onClinkButoonAction}) {
     const indicador = typeMark ==='Next'? '>' : '<';
     
     return (
-        <div>
-            <button style={STYLE}>{indicador}</button>
+        <div >
+            <button className="waves-effect waves-light btn-small" style={STYLE}>{indicador}</button>
         </div>
     )
 }
 
 const STYLE ={
-    background: 'blue',
+    margin: '1px',
+    fontSize: '2em'
 }

@@ -113,7 +113,9 @@ export default function App() {
     return (
       <div className="container">
         <Title />
+        
         <hr />
+        
         <SelectSection>
           <NextReturnButton typeMark="Return" />
           <SelectYearMonth
@@ -122,10 +124,8 @@ export default function App() {
             startValue={yearMonthSelected}
           />
           <NextReturnButton typeMark="Next" />
-        </SelectSection>
 
-        <hr />
-        <Resume>
+          <Resume>
           <Information title="Lançamentos" value={filteredRegisterTransactions.length} style={{ color: 'black' }} />
           <Information title="Receitas" value={
             `R$ ${Receitas()}`
@@ -137,6 +137,10 @@ export default function App() {
             `R$ ${Saldo()}`
           } style={{ color: 'gray' }} />
         </Resume>
+
+        </SelectSection>
+
+        
         <hr />
         <NewRegisterButton titleButton={"+ Novo Registro"} onClickButtonAction={CreateNewRegister} />
 
